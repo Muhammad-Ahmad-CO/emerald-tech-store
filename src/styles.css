@@ -31,8 +31,8 @@
   --color-neon: var(--neon);
   --color-neon-dark: var(--neon-dark);
   --color-neon-bright: var(--neon-bright);
-  --font-display: "Clash Display", "Space Grotesk", "Inter", sans-serif;
-  --font-sans: "Inter", "Manrope", system-ui, sans-serif;
+  --font-display: "Syne", "Space Grotesk", "Inter", sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
   --font-mono: "Space Grotesk", ui-monospace, monospace;
 }
 
