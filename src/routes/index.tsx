@@ -1,29 +1,46 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Preloader } from "@/components/Preloader";
+import { CustomCursor } from "@/components/CustomCursor";
+import { SiteHeader } from "@/components/SiteHeader";
+import { Hero } from "@/components/Hero";
+import { Marquee } from "@/components/Marquee";
+import { ProductGrid } from "@/components/ProductGrid";
+import { Stats } from "@/components/Stats";
+import { Showcase } from "@/components/Showcase";
+import { Testimonials } from "@/components/Testimonials";
+import { Newsletter } from "@/components/Newsletter";
+import { SiteFooter } from "@/components/SiteFooter";
+import { ScrollToTop } from "@/components/ScrollToTop";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Volt — Premium Tech, Engineered for the Edge" },
+      { name: "description", content: "Premium audio, wearables, compute and spatial devices. Designed for people who push." },
+      { property: "og:title", content: "Volt — Premium Tech Store" },
+      { property: "og:description", content: "A new generation of devices built for those who push the edge." },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <Preloader />
+      <CustomCursor />
+      <SiteHeader />
+      <main>
+        <Hero />
+        <Marquee />
+        <ProductGrid />
+        <Stats />
+        <Showcase />
+        <Testimonials />
+        <Newsletter />
+      </main>
+      <SiteFooter />
+      <ScrollToTop />
+    </>
   );
 }
