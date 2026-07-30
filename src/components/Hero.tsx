@@ -1,6 +1,8 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { ArrowRight, ArrowDown } from "lucide-react";
 import { Particles } from "./Particles";
+import { FlipText } from "./FlipText";
+
 import headphones from "@/assets/hero-headphones.png";
 
 export function Hero() {
