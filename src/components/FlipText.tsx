@@ -2,8 +2,12 @@ import { motion } from "framer-motion";
 
 export function FlipText({ text, className }: { text: string; className?: string }) {
   return (
-    <span className={`inline-flex ${className ?? ""}`} style={{ perspective: 600 }}>
+    <span
+      className={`inline-flex flex-wrap align-bottom pl-[0.06em] pr-[0.06em] ${className ?? ""}`}
+      style={{ perspective: 600, overflow: "visible", paddingBottom: "0.08em" }}
+    >
       {text.split("").map((ch, i) => (
+
         <motion.span
           key={`${ch}-${i}`}
           className="inline-block origin-bottom"
