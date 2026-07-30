@@ -48,7 +48,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="font-display text-[clamp(3rem,8vw,7rem)] font-bold leading-[0.95] tracking-tight"
           >
-            <span className="block gradient-text"><FlipText text="Experience" /></span>
+            <span className="block"><FlipText text="Experience" charClassName="gradient-text" /></span>
             <span className="block">
               <FlipText text="the " />
               <em className="not-italic text-neon text-glow"><FlipText text="Future" /></em>
