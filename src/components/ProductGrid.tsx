@@ -6,6 +6,12 @@ import keyboard from "@/assets/product-keyboard.jpg";
 import phone from "@/assets/product-phone.jpg";
 import laptop from "@/assets/product-laptop.jpg";
 import vr from "@/assets/product-vr.jpg";
+import headphones from "@/assets/product-headphones.jpg";
+import drone from "@/assets/product-drone.jpg";
+import speaker from "@/assets/product-speaker.jpg";
+import mouse from "@/assets/product-mouse.jpg";
+import tablet from "@/assets/product-tablet.jpg";
+import powerbank from "@/assets/product-powerbank.jpg";
 
 const products = [
   { name: "Pulse Watch S2", price: "$299", tag: "Wearable", img: watch, specs: "AMOLED · 14-day battery · GPS" },
@@ -14,7 +20,14 @@ const products = [
   { name: "Phantom 15", price: "$899", tag: "Mobile", img: phone, specs: "6.7\" OLED · 200MP · 5G" },
   { name: "Vector Book Air", price: "$1,499", tag: "Compute", img: laptop, specs: "M-class · 18h · 14\" Liquid" },
   { name: "Halo VR One", price: "$549", tag: "Spatial", img: vr, specs: "4K/eye · 120Hz · Untethered" },
+  { name: "Sonic Max ANC", price: "$399", tag: "Audio", img: headphones, specs: "Hi-Res · 60h · Adaptive ANC" },
+  { name: "Skyline D3", price: "$1,199", tag: "Aerial", img: drone, specs: "8K gimbal · 46min · Obstacle AI" },
+  { name: "Orbit Sound 360", price: "$249", tag: "Audio", img: speaker, specs: "360° · Room-tune · Multi-room" },
+  { name: "Glide Pro X", price: "$129", tag: "Desk", img: mouse, specs: "26K DPI · 8kHz · 90h" },
+  { name: "Slate Tab 11", price: "$749", tag: "Compute", img: tablet, specs: "11\" 120Hz · Stylus · 12h" },
+  { name: "Cell Core 20K", price: "$89", tag: "Power", img: powerbank, specs: "20,000mAh · 140W · GaN" },
 ];
+
 
 export function ProductGrid() {
   return (
