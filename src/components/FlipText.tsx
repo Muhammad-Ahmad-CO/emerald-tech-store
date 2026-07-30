@@ -17,13 +17,13 @@ export function FlipText({
       {text.split("").map((ch, i) => (
         <motion.span
           key={`${ch}-${i}`}
-          className={`inline-block origin-bottom ${charClassName ?? ""}`}
+          className="inline-block origin-bottom"
           style={{ transformStyle: "preserve-3d" }}
           whileHover={{ rotateX: 360 }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0 }}
           data-cursor-hover
         >
-          {ch === " " ? "\u00A0" : ch}
+          <span className={`inline-block ${charClassName ?? ""}`}>{ch === " " ? "\u00A0" : ch}</span>
         </motion.span>
       ))}
     </span>
